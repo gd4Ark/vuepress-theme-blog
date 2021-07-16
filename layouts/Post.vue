@@ -18,6 +18,16 @@
       </header>
       <Content itemprop="articleBody" />
       <footer>
+        <div class="post-copyright">
+          本站文章均采用
+          <a
+            href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/"
+            rel="external nofollow"
+            target="_blank"
+            >CC BY-NC-SA 3.0 CN</a
+          >
+          许可协议，请勿用于商业，转载注明出处！
+        </div>
         <Newsletter v-if="$service.email.enabled" />
         <hr />
         <Comment />
@@ -65,4 +75,11 @@ export default {
 
   .post-title
     margin-top 0
+
+.post-copyright
+  margin-top 30px
+  font-size 14px
+  letter-spacing 0px
+  font-family PT Serif, Serif
+  color $textColor
 </style>
