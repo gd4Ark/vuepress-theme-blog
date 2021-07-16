@@ -1,6 +1,6 @@
 {
-  "name": "@vuepress/theme-blog",
-  "version": "2.3.3",
+  "name": "@gd4ark/vuepress-theme-blog",
+  "version": "2.3.5",
   "description": "Default blog theme for VuePress",
   "repository": {
     "type": "git",
@@ -70,6 +70,7 @@
     "vuepress": "^1.0.0"
   },
   "publishConfig": {
+    "access": "public",
     "registry": "https://registry.npmjs.org/"
   }
 }

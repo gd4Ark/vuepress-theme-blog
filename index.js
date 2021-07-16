@@ -53,15 +53,14 @@ module.exports = themeConfig => {
   if (isFeedEnabled) {
     const {
       rss = true,
-      atom = false,
-      json = false,
+      atom = true,
+      json = true,
       ...feedOptions
     } = themeConfig.feed
     resolvedFeedOptions = Object.assign({}, feedOptions, {
       feeds: {
         rss2: { enable: rss },
-        atom1: { enable: atom },
-        json1: { enable: json },
+        ...(feedOptions.feeds || {}),
       },
     })
   }
